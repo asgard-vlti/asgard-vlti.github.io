@@ -71,19 +71,45 @@
             main { padding: 1rem; }
             header { padding: 1.2rem 0.5rem; }
         }
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.5rem;
+        }
+        .asgard-logo {
+                max-width: 200px;
+                height: auto;
+                margin: 0;
+                display: block;
+        }
+        @media (max-width: 600px) {
+            .header-flex {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            .asgard-logo {
+                max-width: 70px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Asgard Instrument Suite</h1>
-        <p>
-            Next-generation visitor instrument for the Very Large Telescope Interferometer<br>
-            European Southern Observatory (ESO)
-        </p>
-        <nav>
-            <a href="publications.html" style="color:#fff;text-decoration:underline;font-size:1.1rem;">Publications</a>
-        </nav>
-    </header>
+<header>
+    <div class="header-flex">
+        <img src="asgard_logo.svg" alt="Asgard Logo" class="asgard-logo">
+        <div>
+            <h1>Asgard Instrument Suite</h1>
+            <p>
+                Next-generation visitor instrument for the Very Large Telescope Interferometer at the European Southern Observatory (ESO)
+            </p>
+        </div>
+    </div>
+    <nav>
+        <a href="publications.html" style="color:#fff;text-decoration:underline;font-size:1.1rem;">Publications</a>
+    </nav>
+</header>
     <main>
         <section>
             <h2>Overview</h2>
@@ -97,25 +123,31 @@
                 <li class="instrument">
                     <h3>HEIMDALLR</h3>
                     <p>
-                        Simultaneous fringe tracking and stellar interferometry with shared optics, operating in the K band.
+                        Simultaneous fringe tracking and stellar interferometry with shared optics, operating in the K band. Named after Heimdallr, the Norse god who guards the Bifröst bridge, symbolizing the instrument's role in safeguarding and enhancing interferometric observations.
                     </p>
                 </li>
                 <li class="instrument">
                     <h3>Baldr</h3>
                     <p>
-                        Strehl optimizer in the H band, enhancing image sharpness and interferometric performance.
+                        Strehl optimizer in the J and H bands, enhancing image sharpness and interferometric performance. Named after Baldr, the Norse god of light and purity, symbolizing the instrument's role in optimizing the clarity and quality of astronomical observations.
                     </p>
                 </li>
                 <li class="instrument">
-                    <h3>BIFROST</h3>
+                    <h3><a href="http://www.astro.ex.ac.uk/people/kraus/bifrost.html">BIFROST</a></h3>
                     <p>
-                        Spectroscopic combiner for studying the formation and properties of stellar and planetary systems in the Y-J-H bands.
+                        Spectroscopic combiner for studying the formation and properties of stellar and planetary systems in the Y-J-H bands. Named after Bifröst, the bridge connecting Midgard (Earth) and Asgard (the realm of the gods), symbolizing the instrument's role in bridging gaps in our understanding of stellar systems.
                     </p>
                 </li>
                 <li class="instrument">
                     <h3> <a href="https://fys.kuleuven.be/ster/research-projects/nott/nott-asgard">NOTT</a></h3>
                     <p>
-                        Nulling interferometer dedicated to imaging nearby young planetary systems in the L band.
+                        Nulling interferometer dedicated to imaging nearby young planetary systems in the L band. Named after Nótt, the Norse goddess of night, who rides across the sky in her chariot, representing the instrument's focus on nulling starlight to reveal faint planetary companions.
+                    </p>
+                </li>
+                <li class="instrument">
+                    <h3> Solarstein</h3>
+                    <p>
+                        The combined internal calibration and alignment unit for the Asgard suite, ensuring precise instrument setup and operation. Named after the Norse goddess of the sun, Sól, who drives the sun's chariot across the sky, and the sunstone that guides Asgard's instruments.
                     </p>
                 </li>
             </ul>
@@ -123,16 +155,32 @@
         <section>
             <h2>Project Status</h2>
             <p>
-                Asgard is currently in its integration phase in Europe and is scheduled for shipment to Paranal Observatory in 2025.
+                The Solarstein, Heimdallr and Baldr copmonent of Asgard are bing integrated in July 2025 with commissioning in September 2025. Asgard's Nott and BIFROST components are part of phase 2 and are currently theirintegration phase in Europe and is scheduled for shipment to Paranal Observatory in early 2026.
+            </p>
+        </section>
+        <section>
+            <h2>Funding and Collaboration</h2>
+            <p>
+                The Asgard project has been funded by several different grant and institutional constributions. These are:
+                <ul class="funding-list">
+                <li>The Australian Research Council (ARC) Linkage Infrastructure Equipment and Facilities (LIEF) scheme (LE220200126). The lead institute for this was 
+                the Australian National University, with partner contributing institutes being the University of Sydney, the University of Melbourne, Macquarie University, the University of Exeter, KU Leuven, and the Observatoire de la Côte d'Azur.</li>
+                <li> The Astralis consortium through the University of Sydney node, providing
+                    support beyond their commitment listed in the LIEF application.</li>
+                <li> The Observatoire de la Côte d'Azur, which provided support well beyond 
+                    their commitment listed in the LIEF application.</li>
+                <li>The European Research Council consolidator grant <a href="http://www.astro.ex.ac.uk/people/kraus/bifrost.html">GAIA-BIFROST</a> (Grant No.101003096) with principle investigator Stefan Kraus</li>
+                <li>The European Research Council consolidator grant <a href="https://fys.kuleuven.be/ster/research-projects/scify/scify">SCIFY</a> (Grant No. 866070) with principle investigator Denis Defrère</li>
+                <li>The European Southern Observatory (ESO) who will host Asgard at Paranal. As a Visitor Instrument, Asgard receives no guaranteed time, but welcomes and supports community access allocated via ESO's standard calls for proposals.</li>
+                </ul>
             </p>
         </section>
         <section>
             <h2>Technical Highlights</h2>
             <ul>
-                <li>Alignment and calibration unit for precise instrument setup</li>
-                <li>Multiple observing modes for diverse science cases</li>
-                <li>Modern software architecture for robust operations</li>
-                <li>Comprehensive integration plan and roadmap to completion</li>
+                <li>Sensitivity optimised instrument - no spectrograph or spatial filtering for Heimdallr</li>
+                <li>Fast, low-latency adaptve optics and fringe tracking - standard operation planned with less than 1.5 ms latency including exposure time. </li>
+                <li>Multiple observing modes at 1-4 micron wavelengths for diverse science cases</li>
             </ul>
         </section>
     </main>

@@ -5,95 +5,7 @@
     <title>Asgard Instrument Suite for ESO's VLTI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Asgard: The next-generation visitor instrument suite ESO's VLTI.">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 2rem 1rem 1rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 0;
-        }
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: #003366;
-            margin-top: 0;
-        }
-        .instrument-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-            list-style: none;
-            padding: 0;
-        }
-        .instrument {
-            background: #e9eef6;
-            border-radius: 6px;
-            padding: 1rem;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-        }
-        .instrument h3 {
-            margin-top: 0;
-            color: #205080;
-        }
-        footer {
-            text-align: center;
-            color: #666;
-            font-size: 0.95rem;
-            margin: 2rem 0 1rem 0;
-        }
-        @media (max-width: 600px) {
-            main { padding: 1rem; }
-            header { padding: 1.2rem 0.5rem; }
-        }
-        .header-flex {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 1.5rem;
-        }
-        .asgard-logo {
-                max-width: 200px;
-                height: auto;
-                margin: 0;
-                display: block;
-        }
-        @media (max-width: 600px) {
-            .header-flex {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-            .asgard-logo {
-                max-width: 70px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -107,7 +19,9 @@
         </div>
     </div>
     <nav>
-        <a href="publications.html" style="color:#fff;text-decoration:underline;font-size:1.1rem;">Publications</a>
+        <a href="index.html" style="color:#fff;text-decoration:underline;">Home</a>
+        <a href="publications.html" style="color:#fff;text-decoration:underline;">Publications</a>
+        <a href="team.html" style="color:#fff;text-decoration:underline;">Team</a>
     </nav>
 </header>
     <main>
@@ -135,7 +49,7 @@
                 <li class="instrument">
                     <h3><a href="http://www.astro.ex.ac.uk/people/kraus/bifrost.html">BIFROST</a></h3>
                     <p>
-                        Spectroscopic combiner for studying the formation and properties of stellar and planetary systems in the Y-J-H bands. Named after Bifröst, the bridge connecting Midgard (Earth) and Asgard (the realm of the gods), symbolizing the instrument's role in bridging gaps in our understanding of stellar systems.
+                        Spectroscopic combiner for studying the formation and properties of stellar and planetary systems in the Y-J-H bands. Named after Bifröst, the bridge connecting Midgard (Earth) and Asgard (the realm of the gods), symbolizing the instrument's role in bridging gaps in our understanding of stellar systems by maximising the angular resolution of VLTI.
                     </p>
                 </li>
                 <li class="instrument">
@@ -162,7 +76,7 @@
             <h2>Funding and Collaboration</h2>
             <p>
                 The Asgard project has been funded by several different grant and institutional constributions. These are:
-                <ul class="funding-list">
+                <ul>
                 <li>The Australian Research Council (ARC) Linkage Infrastructure Equipment and Facilities (LIEF) scheme (LE220200126). The lead institute for this was 
                 the Australian National University, with partner contributing institutes being the University of Sydney, the University of Melbourne, Macquarie University, the University of Exeter, KU Leuven, and the Observatoire de la Côte d'Azur.</li>
                 <li> The Astralis consortium through the University of Sydney node, providing

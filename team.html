@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asgard Instrument Suite Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Asgard Instrument Suite Team Members">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-section {
+            margin-bottom: 2.5rem;
+        }
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+        }
+        .team-member {
+            background: #e9eef6;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .team-photo {
+            width: 64px;
+            height: 64px;
+            background: #cfd8e6;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            display: block;
+        }
+        .team-info {
+            flex: 1;
+        }
+        .team-role {
+            font-size: 0.98em;
+            color: #205080;
+        }
+        @media (max-width: 600px) {
+            .team-list {
+                grid-template-columns: 1fr;
+            }
+            .team-member {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-flex">
+        <img src="asgard_logo.svg" alt="Asgard Logo" class="asgard-logo">
+        <div>
+            <h1>Asgard Instrument Suite</h1>
+            <p>
+                Next-generation visitor instrument for the Very Large Telescope Interferometer at the European Southern Observatory (ESO)
+            </p>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html" style="color:#fff;text-decoration:underline;">Home</a>
+        <a href="publications.html" style="color:#fff;text-decoration:underline;">Publications</a>
+        <a href="team.html" style="color:#fff;text-decoration:underline;">Team</a>
+    </nav>
+</header>
+<main>
+    <section class="team-section">
+        <h2>Management Committee</h2>
+        <ul class="team-list">
+            <li class="team-member">
+                <img src="photos/mike_ireland.jpg" alt="Mike Ireland" class="team-photo">
+                <div class="team-info">
+                    <strong>Mike Ireland</strong> (ANU)<br>
+                    <span class="team-role">Heimdallr/Baldr/Solarstein co-lead and committee chair</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/frantz_martinache.jpg" alt="Frantz Martinache" class="team-photo">
+                <div class="team-info">
+                    <strong>Frantz Martinache</strong> (OCA)<br>
+                    <span class="team-role">Heimdallr co-lead</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/denis_defrere.jpg" alt="Denis Defrére" class="team-photo">
+                <div class="team-info">
+                    <strong>Denis Defrére</strong> (KU Leuven)<br>
+                    <span class="team-role">Nott lead</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/stefan_kraus.jpg" alt="Stefan Kraus" class="team-photo">
+                <div class="team-info">
+                    <strong>Stefan Kraus</strong> (Exeter)<br>
+                    <span class="team-role">BIFROST lead</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="team-section">
+        <h2>Instrument Team</h2>
+        <ul class="team-list">
+            <li class="team-member">
+                <img src="photos/adam_taras.jpg" alt="Adam Taras" class="team-photo">
+                <div class="team-info">
+                    <strong>Adam Taras</strong> (Sydney)<br>
+                    <span class="team-role">Solarstein co-lead and optomechanical engineer</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/benjamin_courtney-barrer.jpg" alt="Benjamin Courtney-Barrer" class="team-photo">
+                <div class="team-info">
+                    <strong>Benjamin Courtney-Barrer</strong> (ANU)<br>
+                    <span class="team-role">Baldr co-lead</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/sylvie_robbie-dubois.jpg" alt="Sylvie Robbie-Dubois" class="team-photo">
+                <div class="team-info">
+                    <strong>Sylvie Robbie-Dubois</strong> (OCA)<br>
+                    <span class="team-role">Senior interferometrist and instrument scientist (Heimdallr/Baldr/Solarstein)</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/peter_tuthill.jpg" alt="Peter Tuthill" class="team-photo">
+                <div class="team-info">
+                    <strong>Peter Tuthill</strong> (Sydney)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/gordon_robertson.jpg" alt="Gordon Robertson" class="team-photo">
+                <div class="team-info">
+                    <strong>Gordon Robertson</strong> (Sydney)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/nick_cvetojevic.jpg" alt="Nick Cvetojevic" class="team-photo">
+                <div class="team-info">
+                    <strong>Nick Cvetojevic</strong> (OCA)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/romain_laugier.jpg" alt="Romain Laugier" class="team-photo">
+                <div class="team-info">
+                    <strong>Romain Laugier</strong> (KU Leuven)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/germain_garreau.jpg" alt="Germain Garreau" class="team-photo">
+                <div class="team-info">
+                    <strong>Germain Garreau</strong> (KU Leuven)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/roxanne_ligi.jpg" alt="Roxanne Ligi" class="team-photo">
+                <div class="team-info">
+                    <strong>Roxanne Ligi</strong> (OCA)<br>
+                    <span class="team-role">Senior interferometrist and instrument scientist (Heimdallr/Baldr/Solarstein)</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/emilie_bouzerand.jpg" alt="Emilie Bouzerand" class="team-photo">
+                <div class="team-info">
+                    <strong>Emilie Bouzerand</strong> (ETH Zurich)<br>
+                    <span class="team-role">Optomechanical Engineer (Nott)</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/sebastien_morel.jpg" alt="Sébastien Morel" class="team-photo">
+                <div class="team-info">
+                    <strong>Sébastien Morel</strong> (OCA)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/jyotirmay_paul.jpg" alt="Jyotirmay Paul" class="team-photo">
+                <div class="team-info">
+                    <strong>Jyotirmay Paul</strong> (Exeter)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+            <li class="team-member">
+                <img src="photos/owain_snaith.jpg" alt="Owain Snaith" class="team-photo">
+                <div class="team-info">
+                    <strong>Owain Snaith</strong> (Exeter)<br>
+                    <span class="team-role">Instrument Team</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="team-section">
+    <h2>Previous Team Members and Collaborating Scientists</h2>
+    <ul>
+        <li><strong>Daniel Mortimer</strong> (Exeter): Bifrost Design</li>
+        <li><strong>Simon Gross</strong> (Macquarie): Collaborating Scientist</li>
+        <li><strong>Luca Casagrande</strong> (ANU): Collaborating Scientist</li>
+        <li><strong>Rachel Webster</strong> (Melbourne): Collaborating Scientist</li>
+    </ul>
+</section>
+</main>
+<footer>
+    &copy; 2025 Asgard Instrument Team
+</footer>
+</body>
+</html>

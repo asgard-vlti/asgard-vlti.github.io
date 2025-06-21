@@ -4,56 +4,28 @@
     <meta charset="UTF-8">
     <title>Asgard Publications</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 2rem 1rem 1rem 1rem;
-            text-align: center;
-        }
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem;
-        }
-        ul {
-            padding-left: 1.2em;
-        }
-        li {
-            margin-bottom: 1.2em;
-        }
-        a {
-            color: #205080;
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            color: #666;
-            font-size: 0.95rem;
-            margin: 2rem 0 1rem 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Asgard Publications</h1>
-        <p>
-            <a href="index.html" style="color:#fff;text-decoration:underline;">&#8592; Back to Home</a>
-        </p>
+   <header>
+    <div class="header-flex">
+        <img src="asgard_logo.svg" alt="Asgard Logo" class="asgard-logo">
+        <div>
+            <h1>Asgard Instrument Suite</h1>
+            <p>
+                Next-generation visitor instrument for the Very Large Telescope Interferometer at the European Southern Observatory (ESO)
+            </p>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html" style="color:#fff;text-decoration:underline;">Home</a>
+        <a href="publications.html" style="color:#fff;text-decoration:underline;">Publications</a>
+        <a href="team.html" style="color:#fff;text-decoration:underline;">Team</a>
+    </nav>
     </header>
     <main>
         <section>
-            <!-- Use ADS custom format: %l (%Y) <a href="%u">"%T"<\a>, %J, %V(%p) -->
+            <!-- Use ADS custom format: %l (%Y) <a href="%u">"%T"</a>, %J, %V(%p) -->
             <h2>Recent Publications</h2>
             <ul>
                 <li>
@@ -127,6 +99,11 @@
                 <li>
                     Defrère, D., Absil, O., Berger, J.-P., Danchi, W. C., Dandumont, C., Eisenhauer, F., Ertel, S., Gardner, T., Glauser, A., Hinz, P., Ireland, M., Kammerer, J., Kraus, S., Labadie, L., Lacour, S., Laugier, R., Loicq, J., Martin, G., Martinache, F., Martinod, M. A., Mennesson, B., Monnier, J., Norris, B., Nowak, M., Pott, J. U., Quanz, S. P., Serabyn, E., Stone, J., Tuthill, P., &amp; Woillez, J. (2020)
                     <a href="https://ui.adsabs.harvard.edu/abs/2020SPIE11446E..1JD">"Review and scientific prospects of high-contrast optical stellar interferometry"</a>, Optical and Infrared Interferometry and Imaging VII, 11446(114461J)
+                </li>
+                <li>
+                    Ireland, M. J., Defrère, D., Martinache, F., Monnier, J. D., Norris, B., Tuthill, P., & Woillez, J. (2018) 
+                    <a href="https://ui.adsabs.harvard.edu/abs/2018SPIE10701E..11I">"Image-plane fringe tracker for adaptive-optics assisted long baseline interferometry"</a>, 
+                    Optical and Infrared Interferometry and Imaging VI, 10701(1070111)
                 </li>
             </ul>
         </section>
